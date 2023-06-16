@@ -9,7 +9,7 @@ WORKDIR /sources
 
 COPY * /sources
 
-RUN cd /sources && mvn clean package dependency:copy-dependencies
+RUN cd /sources && mvn clean package
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
